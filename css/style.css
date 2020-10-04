@@ -104,6 +104,7 @@ body{
     background-color: #5b352c;
     display: flex;
     justify-content: center;
+    box-shadow: 2px 2px #5b352ca4;
 }
 .longa{
     height: 90%;

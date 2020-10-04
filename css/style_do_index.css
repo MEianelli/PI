@@ -1,0 +1,84 @@
+/* <div class="textInicial"></div>    
+<div class="fotosELink"></div>
+<div class="fotoLateral"></div>
+<div class="textoPrincipal"></div> */
+
+.contentwrapdoindex{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+}
+
+.textInicial{
+    float: left;
+    width: 100%;
+    height: 150px;
+    text-align: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+}
+.fotosELink{
+    float: left;
+    width: 100%;
+    height: 400px;
+
+}
+
+.fotoLateral{
+    float: left;
+    width: 30%;
+    height: 800px;
+    background-color: cadetblue;
+}
+
+.textoPrincipal{
+    float: left;
+    width: 70%;
+    height: 800px;
+    background-color: crimson;
+}
+
+.fundoDireito{
+    float: right;
+    width: 85%;
+    height: 150px;
+    background-color: #FFF9D7;
+    border-radius: 25px 0 0 0;
+}
+
+.fotosLink{
+    height: 200px;
+    width: 100%;
+    float: left;
+
+}
+.fotos{
+    position: relative;
+    bottom: 80px;
+    margin-right: 20px;
+    float: left;
+    width: 31%;
+    height: 100%;
+    background-color: darkmagenta;
+    border-radius: 25px;
+}
+.linkSaibaMaisWrap{
+    float: left;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+}
+.linkSaibaMais{
+    position: relative;
+    bottom: 40px;
+    background-color:rgb(211,144,51);
+    height: 50px;
+    width: 200px;
+    line-height: 50px;
+    color: white;
+    text-align: center;
+    border-radius: 25px;
+}
