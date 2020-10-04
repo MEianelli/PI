@@ -1,7 +1,3 @@
-/* <div class="textInicial"></div>    
-<div class="fotosELink"></div>
-<div class="fotoLateral"></div>
-<div class="textoPrincipal"></div> */
 
 .contentwrapdoindex{
     width: 100%;
@@ -30,14 +26,16 @@
     float: left;
     width: 30%;
     height: 800px;
-    background-color: cadetblue;
+    position: relative;
 }
 
 .textoPrincipal{
     float: left;
     width: 70%;
     height: 800px;
-    background-color: crimson;
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
 }
 
 .fundoDireito{
@@ -61,7 +59,6 @@
     float: left;
     width: 31%;
     height: 100%;
-    background-color: darkmagenta;
     border-radius: 25px;
 }
 .linkSaibaMaisWrap{
@@ -81,4 +78,89 @@
     color: white;
     text-align: center;
     border-radius: 25px;
+}
+.linkSaibaMais:hover{
+    background-color: #5b352c;
+    cursor: pointer;
+}
+.fundoLateralDireito{
+    height: 80%;
+    width: 80%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgb(211,144,51);
+    border-radius: 0 25px 0 0;
+}
+
+.fotoLateralDireito{
+    height: 80%;
+    width: 80%;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    border-radius: 25px;
+}
+
+.textoMeio{
+    text-align: center;
+    margin-bottom: 80px;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+
+
+@media (max-width: 1000px){
+    .f1{
+        display: none;
+    }
+
+    .fotosELink{
+        float: left;
+        width: 100%;
+        height: 500px;
+    }
+        
+    .fotosLink{
+        height: 300px;
+    }
+
+    .fotos{
+        width: 45%
+    }
+}
+
+@media (max-width: 800px){
+
+    .f2{
+        display: none;
+    }
+
+    .fotosELink{
+        float: left;
+        width: 100%;
+        height: 500px;
+    }
+        
+    .fotosLink{
+        height: 300px;
+    }
+
+    .fotos{
+        width: 85%
+    }
+
+    .fotoLateral{
+        display: none;
+    }
+
+    .textoPrincipal{
+        float: left;
+        width: 100%;
+        height: 500px;
+        display: flex;
+        justify-content: center;
+        flex-flow: column;
+    }
 }
