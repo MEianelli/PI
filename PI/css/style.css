@@ -1,0 +1,308 @@
+body{
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #FFF9D8;
+}
+*{
+    box-sizing: border-box;
+}
+.topowrap{
+    width: 100%;
+    height: 360px;    
+}
+.navegacao{
+    width: 100%;
+    height: 50px;
+    padding-left: 200px;
+    padding-right: 200px;
+    background-color: rgb(211,144,51);
+    display: flex;
+    justify-content: space-between;
+}
+.logowrap{
+    flex-grow: 1;
+}
+.menucelular{
+    display: none;
+}
+.botoesnavegacao{
+    color: white;
+    width: 100px;
+    height: 100%;
+    line-height: 50px;
+    text-align: center;
+}
+.botoesnavegacao:hover{
+    background-color: #5b352c;
+    cursor: pointer;
+}
+
+.submenu{
+    display: none;
+}
+
+.banner{
+    width: 100%;
+    height: 300px;
+    background-image: url("../img/Banner\ AVOA.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-bottom: 10px solid rgb(211,144,51) ;
+}
+
+
+.categoria{
+    width: 100%;
+    height: 50px;
+    background-color: rgb(211,144,51);
+    text-align: center;
+    color: white;
+    line-height: 50px;
+    border-radius: 50px;
+}
+
+
+.cor1{
+    background-color: #915e2f;
+    
+}
+.cor2{
+    background-color: #5b352c;
+
+}
+
+.contentwrap{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.contentsmallerwrap{
+    width: 900px;
+}
+.blocos{
+    width: 100%;
+    height: 600px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+}
+
+.bloco{
+    width: 33.33%;
+    height: 300px;
+    flex-grow: 1;
+}
+.longo{
+    height: 600px;
+}
+.fotodiv{
+    margin: 8px;
+    border-radius: 8px;
+    height: 80%;
+    width: auto;
+    background-color: #5b352c;
+    display: flex;
+    justify-content: center;
+    box-shadow: 2px 2px #5b352ca4;
+}
+.longa{
+    height: 90%;
+}
+.fotosclass{
+    height: 100%;
+    width: 100%;
+    border-radius: 8px;
+}
+.textodiv{
+    float: left;
+    width: 100%;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+.tituloproduto{
+    color: black;
+}
+.precoproduto{
+    color: rgb(211,144,51);
+}
+
+p{
+    margin: 0;
+}
+
+.footerWrap{
+    width: 100%;
+    height: 300px;
+    background-color: rgb(211,144,51);
+}
+
+.colunas{
+    width: 25%;
+    height: 100%;
+    float: left;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 80px;
+}
+
+.linkfooter{
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    color: white;
+    text-align: left;
+}
+.email{
+    font-size: 0.7em;
+}
+.linkfooter:hover{
+    color: #5b352c;
+    cursor: pointer;
+}
+.icons{
+    width: 25% !important;
+    float: left;
+    font-size: 30px;
+}
+
+@media (max-width:1000px){
+
+    .contentsmallerwrap{
+        width: 700px;
+    }
+
+    .blocos{
+        height: 600px;
+        flex-flow: row wrap;
+        justify-content: space-between;
+    }
+    
+    .bloco{
+        width: 50%;
+        flex-grow: 0;
+    }
+    .longo{
+        display: none;
+    }
+    
+    .colunas{
+        padding-top: 30px;
+        padding-bottom: 30px;
+        padding-left: 40px;
+    }
+    
+    .linkfooter{
+        
+        height: 40px;
+        line-height: 40px;
+    }
+    .email{
+        font-size: 0.7em;
+    }
+
+}
+
+@media (max-width:800px){
+
+    .topowrap{
+        height: 50px; 
+        margin-bottom: 20px;   
+    }
+    .navegacao{
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .logowrap{
+        flex-grow: 0;
+    }
+    .botoesnavegacao{
+        display: none;
+    }
+    .carrinho{
+        display: block;
+    }
+    .menucelular{
+        display: block;
+        color: white;
+        width: 100px;
+        height: 100%;
+        line-height: 50px;
+        text-align: center;
+        position: relative;
+    }
+    .menucelular:hover{
+        background-color: #5b352c;
+        cursor: pointer;
+    }
+
+    .submenu{
+        display: none;
+        position: absolute;
+        top: 50px;
+        left: -150px;
+        background-color: rgb(211,144,51);
+        width: 400px;
+        height: 200px;
+    }
+    .submenuitem{
+        height: 50px;
+        width: 100%;
+        color: white;
+    }
+    .submenuitem:hover{
+        background-color: #5b352c;
+        cursor: pointer;
+    }
+    .menucelular:hover .submenu{
+        display: block;
+        cursor: pointer;
+    }
+
+    .banner{
+        display: none;
+    }
+    
+    .categoria{
+        height: 30px;
+        line-height: 30px;
+        border-radius: 30px;
+    }
+    
+  
+    .contentsmallerwrap{
+        width: 500px;
+    }
+    .blocos{
+        height: 1200px;
+        flex-flow: row wrap;
+    }
+    
+    .bloco{
+        width: 100%;
+        flex-grow: 0;
+    }
+    .longo{
+        display: none;
+    }
+
+    .footerWrap{
+        height: 350px;
+    }
+    
+    .colunas{
+        width: 50%;
+        height: 200px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 10px;
+    }
+    .sociais{
+        height: 100px;
+    }
+    .linkfooter{
+        width: 100%;
+        height: 40px;
+        line-height: 40px;
+    }
+}

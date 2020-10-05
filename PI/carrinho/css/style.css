@@ -1,0 +1,188 @@
+* {
+    box-sizing: border-box;
+}
+
+a:hover {
+    color: #000;
+    text-decoration: none;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+.img {
+    border: #777 1px solid;
+    width: 25vw;
+    border-radius: 10%;
+    margin: 10px 0;
+}
+
+.col-12 {
+    border: #777 1px solid;
+    border-radius: 10px;
+    background-color: white;
+    height: 80%;
+}
+
+.junta {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.menos {
+    height: 80%;
+    width: 18%;
+    align-self: center;
+}
+.mais {
+    align-self: center;
+    height: 80%;
+    width: 18%;
+}
+
+.qtd {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: #777 1px solid;
+    border-radius: 10px;
+    width: 12%;
+    height: 50%;
+    align-self: center;
+}
+
+.preco {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.choice {
+    display: flex;
+    justify-self: flex-start;
+    align-items: center;
+    width: 70%;
+}
+
+.valor {
+    align-self: center;
+    justify-self: flex-end;
+}
+
+.fimComp .row {
+    border: #777 1px solid;
+    border-radius: 25px;
+    background-color: white;
+}
+
+.mod {
+    border: #777 1px solid;
+    border-radius: 25px;
+    background-color: white;
+}
+
+.feat {
+    border-bottom: #777 1px solid;
+}
+
+.btnCont {
+    border: #000 1px solid;
+    border-radius: 10px;
+    background-color: rgb(211,144,51);
+    width: 50%;
+    text-align: center;
+}
+
+.btnProd {
+    border: #000 1px solid;
+    border-radius: 10px;
+    background-color: rgb(211,144,51);
+    width: 50%;
+    text-align: center;
+}
+
+@media (min-width: 600px){
+    
+    .junta {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .texto {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .col-12 {
+        border: #777 1px solid;
+        border-radius: 50px;
+        background-color: white;
+        height: 70%;
+    }
+
+    .titulo {
+        padding-left: 5%;
+        font-size: 2em;
+    }
+    .desc {
+        font-size: larger;
+    }
+
+    .valor {
+        font-size: 2em;
+    }
+    
+    .fimComp .row {
+        border: #777 1px solid;
+        border-radius: 25px;
+        background-color: white;
+    }
+    
+    .col-8 {
+        font-size: 2em;
+    }
+
+    .col-4 {
+        font-size: 1.5em;
+
+    }
+    
+}
+
+@media (min-width: 900px){
+    
+   .corpo {
+       display: flex;
+       flex-direction: row;
+    }
+
+    .carrinho {
+        width: 80%;
+    }
+
+    .img {
+        width: 20%;
+    }
+
+    .junta {
+        justify-content: flex-start;
+    }
+
+    .texto {
+        align-self: flex-start;
+    }
+    
+}
