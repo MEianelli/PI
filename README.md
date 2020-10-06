@@ -8,6 +8,5 @@ Os integrantes do Grupo 10 são:
  - Enzo ([@enzoyoshio](https://github.com/enzoyoshio))
  - Filipe ([@MEianelli](https://github.com/MEianelli))
  - Igor ([@SilvaIgorDosSantos](https://github.com/SilvaIgorDosSantos))
- - Lucas
 
 Nosso projeto utilizou como base a [AVOÁ](https://www.instagram.com/avoa.h/) produzindo o Front End de um e-commerce para os produtos da marca.
