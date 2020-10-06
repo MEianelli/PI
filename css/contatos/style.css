@@ -65,10 +65,10 @@ a {
 }
 
 .endereco {
-    margin-top: 50px;
+    margin-top: 40%;
     text-transform: uppercase;
     font-weight: bold;
-    text-align: center;
+    
     color: rgb(98,55,9);
 }
 
@@ -82,6 +82,10 @@ a {
     .fotos{
         width: 45%
     }
+
+    .endereco {
+        margin-top: 50%;
+    }
 }
 
 @media (max-width: 800px){
@@ -90,7 +94,6 @@ a {
     }
 
     .categoria{
-        width: 100%;
         height: 30px;
         line-height: 30px;
         border-radius: 30px;
@@ -107,5 +110,9 @@ a {
 
     .texto-mapa {
         height: 500px;
+    }
+
+    .endereco {
+        margin-top: 15px;
     }
 }

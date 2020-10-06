@@ -12,12 +12,22 @@ a {
     color:  rgb(98,55,9);
 }
 
+.instagram-link {
+    color:  rgb(211,144,51);
+}
+
 .contentwrapdoindex{
     width: 100%;
     display: flex;
     justify-content: center;
     margin-top: 5px;
     margin-bottom: 10px;
+}
+
+.contentsmallerwrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .categoria{
