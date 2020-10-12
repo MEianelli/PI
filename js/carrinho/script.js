@@ -33,9 +33,9 @@ let sub = document.querySelector(".subtotal");
 // oi();
 
 window.addEventListener("load", function () {
-  carrinho = JSON.parse(localStorage.getItem("carrinho") || "[]");
+  carrinho = JSON.parse(localStorage.getItem("carrinho"));
 
-  if (carrinho == "[]") return;
+  //if (carrinho == "[]") return;
 
   for (let i = 0; i < carrinho.length; ++i) {
     car = carrinho[i];
@@ -88,12 +88,23 @@ function a() {
 
     btnMe = menos[i];
 
-    btnMe.addEventListener("click", function () {
+    btnMe.addEventListener("click", function (e) {
+      //tentativa de pegar info de qual foto foi clicada
+      var tempTexto = e.path[3].innerHTML;
+      var acharAondeEstaInicioImagem = tempTexto.search("./img/");
+      var acharAondeEstaJpg = tempTexto.search(".jpg");
+      var srcString = tempTexto.slice(
+        acharAondeEstaInicioImagem,
+        acharAondeEstaJpg + 4
+      );
+      //end
+
       let n = qntd[i].innerText;
       n = n > 0 ? n - 1 : 0;
 
       if (n == 0)
         if (window.confirm("Voce quer retirar esse produto do carrinho ?")) {
+          removerDoLocalstorage(srcString);
           btnM.parentElement.parentElement.parentElement.remove();
         }
 
@@ -124,3 +135,13 @@ document
     location.reload();
     return false;
   });
+
+function removerDoLocalstorage(string) {
+  let temp = JSON.parse(localStorage.getItem("carrinho"));
+
+  for (let i = temp.length - 1; i >= 0; i--) {
+    string === temp[i].img ? temp.splice(i, 1) : "";
+  }
+
+  localStorage.setItem("carrinho", JSON.stringify(temp));
+}
