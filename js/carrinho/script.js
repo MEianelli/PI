@@ -95,7 +95,6 @@ function a() {
       if (n == 0)
         if (window.confirm("Voce quer retirar esse produto do carrinho ?")) {
           btnM.parentElement.parentElement.parentElement.remove();
-          removeDoStorage();
         }
 
       qntd[i].innerText = n;
@@ -118,6 +117,10 @@ let b = function () {
   tot.innerText = "R$ " + total.toFixed(2);
 };
 
-function removeDoStorage() {
-  let a = JSON.parse(localStorage.getItem("carrinho"));
-}
+document
+  .querySelector(".limparCarrinho")
+  .addEventListener("click", function () {
+    localStorage.clear();
+    location.reload();
+    return false;
+  });
