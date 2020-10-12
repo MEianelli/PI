@@ -24,7 +24,7 @@ a {
   height: 50px;
   padding-left: 200px;
   padding-right: 200px;
-  background-color: rgb(211, 144, 51);
+  background-color: #d39033;
   display: flex;
   justify-content: space-between;
 }
@@ -109,7 +109,7 @@ a {
   background-color: #5b352c;
   display: flex;
   justify-content: center;
-  box-shadow: 2px 2px #5b352ca4;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .longa {
   height: 90%;

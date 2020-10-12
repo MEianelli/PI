@@ -1,0 +1,157 @@
+.popupwraper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #000000bb;
+  display: none;
+  justify-content: center;
+}
+
+.botaoParaFecharPop {
+  position: absolute;
+  right: 150px;
+  width: 30px;
+  height: 30px;
+  border-radius: 25px;
+  line-height: 30px;
+  text-align: center;
+  color: #5b352c;
+  background-color: #fff9d8;
+  cursor: pointer;
+}
+
+.wrapinterno {
+  width: 60%;
+  height: 100%;
+  background-color: #fff9d8;
+  border-radius: 25px;
+}
+.produto-todos {
+  float: left;
+  text-align: center;
+  color: white;
+  box-sizing: border-box;
+  border-radius: 25px;
+}
+.produto-imagem {
+  width: 50%;
+  height: 100%;
+}
+.produto-imagem-p {
+  width: 90%;
+  height: 90%;
+  margin-top: 25px;
+}
+.produto-titulo {
+  width: 50%;
+  height: 20%;
+  padding-top: 25px;
+}
+.produto-titulo-p {
+  font-size: 2em;
+  background-color: #d39033;
+  margin: 0 40px 0 40px;
+  border-radius: 25px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.produto-descricao {
+  width: 50%;
+  height: 40%;
+  padding-top: 50px;
+}
+.produto-descricao-p {
+  padding: 10px;
+  background-color: #d39033;
+  font-style: italic;
+  margin: 0 40px 0 40px;
+  border-radius: 25px;
+  box-shadow: 0 4px 8px 0 #00000033, 0 6px 20px 0 #00000030;
+}
+.produto-preco {
+  width: 50%;
+  height: 20%;
+  padding-top: 50px;
+}
+.produto-preco-p {
+  background-color: #d39033;
+  font-size: 2em;
+  margin: 0 40px 0 40px;
+  border-radius: 25px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.produto-adicionar {
+  width: 50%;
+  height: 20%;
+  padding-top: 50px;
+}
+.produto-adicionar-p {
+  padding: 10px;
+  background-color: #d39033;
+  cursor: pointer;
+  margin: 0 40px 0 40px;
+  border-radius: 25px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.produto-adicionar-p:hover {
+  background-color: #5b352c;
+}
+
+@media (max-width: 1000px) {
+  .popupwraper {
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+  }
+  .botaoParaFecharPop {
+    width: 100%;
+    background-color: #00000000;
+    right: 0;
+  }
+
+  .wrapinterno {
+    width: 90%;
+  }
+
+  .produto-imagem {
+    width: 100%;
+    height: 50%;
+  }
+  .produto-imagem-p {
+    margin-top: 30px;
+  }
+  .produto-titulo {
+    width: 100%;
+    height: 6%;
+    padding-top: 10px;
+  }
+  .produto-titulo-p {
+    font-size: 1.3em;
+    margin: 0 10px 0 10px;
+  }
+  .produto-descricao {
+    width: 100%;
+    padding-top: 10px;
+    height: 25%;
+  }
+  .produto-descricao-p {
+    margin: 0 10px 0 10px;
+  }
+  .produto-preco {
+    width: 100%;
+    padding-top: 10px;
+    height: 6%;
+  }
+  .produto-preco-p {
+    font-size: 1.3em;
+    margin: 0 10px 0 10px;
+  }
+  .produto-adicionar {
+    width: 100%;
+    padding-top: 10px;
+  }
+  .produto-adicionar-p {
+    margin: 0 10px 0 10px;
+  }
+}

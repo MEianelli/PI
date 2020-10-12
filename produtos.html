@@ -13,9 +13,39 @@
       type="text/css"
     />
     <link href="./css/style.css" rel="stylesheet" />
+    <link href="./css/produtos/style.css" rel="stylesheet" />
     <title>AVOA</title>
   </head>
   <body>
+    <!-- Inicio Container para pop up de quando clica em uma imagem -->
+
+    <div class="popupwraper">
+      <div class="botaoParaFecharPop">X</div>
+      <div class="wrapinterno">
+        <div class="produto-todos produto-imagem">
+          <img
+            src="./img/foto1.jpg"
+            alt=" "
+            class="fotosclass produto-imagem-p"
+          />
+        </div>
+        <div class="produto-todos produto-titulo">
+          <p class="produto-titulo-p"></p>
+        </div>
+        <div class="produto-todos produto-descricao">
+          <p class="produto-descricao-p"></p>
+        </div>
+        <div class="produto-todos produto-preco">
+          <p class="produto-preco-p"></p>
+        </div>
+        <div class="produto-todos produto-adicionar">
+          <p class="produto-adicionar-p">Adicionar ao Carrinho</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Fim Container para pop up -->
+
     <!-- Menu banner e divisor, topo do site -->
     <div class="topowrap">
       <div class="navegacao">
@@ -59,153 +89,13 @@
     <div class="contentwrap">
       <div class="contentsmallerwrap">
         <div class="categoria">NOVOS</div>
-        <div class="blocos">
-          <div class="bloco longo">
-            <div class="fotodiv longa">
-              <img src="./img/foto1.jpg" alt=" " class="fotosclass" />
-            </div>
-            <div class="textodiv">
-              <p class="tituloproduto">Lorem Ipsum</p>
-              <p class="precoproduto">R$300</p>
-            </div>
-          </div>
-          <div class="bloco">
-            <div class="fotodiv">
-              <img src="./img/foto2.jpg" alt=" " class="fotosclass" />
-            </div>
-            <div class="textodiv">
-              <p class="tituloproduto">Lorem Ipsum</p>
-              <p class="precoproduto">R$300</p>
-            </div>
-          </div>
-          <div class="bloco">
-            <div class="fotodiv">
-              <img src="./img/foto3.jpg" alt=" " class="fotosclass" />
-            </div>
-            <div class="textodiv">
-              <p class="tituloproduto">Lorem Ipsum</p>
-              <p class="precoproduto">R$300</p>
-            </div>
-          </div>
-          <div class="bloco">
-            <div class="fotodiv">
-              <img src="./img/foto4.jpg" alt=" " class="fotosclass" />
-            </div>
-            <div class="textodiv">
-              <p class="tituloproduto">Lorem Ipsum</p>
-              <p class="precoproduto">R$300</p>
-            </div>
-          </div>
-          <div class="bloco">
-            <div class="fotodiv">
-              <img src="./img/foto5.jpg" alt=" " class="fotosclass" />
-            </div>
-            <div class="textodiv">
-              <p class="tituloproduto">Lorem Ipsum</p>
-              <p class="precoproduto">R$300</p>
-            </div>
-          </div>
-        </div>
+        <div class="blocos" id="novos"></div>
 
         <div class="categoria cor1">PROMOÇÃO</div>
-
-        <div class="blocos">
-          <div class="bloco">
-            <div class="fotodiv">
-              <img src="./img/foto2.jpg" alt=" " class="fotosclass" />
-            </div>
-            <div class="textodiv">
-              <p class="tituloproduto">Lorem Ipsum</p>
-              <p class="precoproduto">R$300</p>
-            </div>
-          </div>
-          <div class="bloco">
-            <div class="fotodiv">
-              <img src="./img/foto3.jpg" alt=" " class="fotosclass" />
-            </div>
-            <div class="textodiv">
-              <p class="tituloproduto">Lorem Ipsum</p>
-              <p class="precoproduto">R$300</p>
-            </div>
-          </div>
-          <div class="bloco">
-            <div class="fotodiv">
-              <img src="./img/foto4.jpg" alt=" " class="fotosclass" />
-            </div>
-            <div class="textodiv">
-              <p class="tituloproduto">Lorem Ipsum</p>
-              <p class="precoproduto">R$300</p>
-            </div>
-          </div>
-          <div class="bloco">
-            <div class="fotodiv">
-              <img src="./img/foto5.jpg" alt=" " class="fotosclass" />
-            </div>
-            <div class="textodiv">
-              <p class="tituloproduto">Lorem Ipsum</p>
-              <p class="precoproduto">R$300</p>
-            </div>
-          </div>
-          <div class="bloco longo">
-            <div class="fotodiv longa">
-              <img src="./img/foto1.jpg" alt=" " class="fotosclass" />
-            </div>
-            <div class="textodiv">
-              <p class="tituloproduto">Lorem Ipsum</p>
-              <p class="precoproduto">R$300</p>
-            </div>
-          </div>
-        </div>
+        <div class="blocos" id="promocao"></div>
 
         <div class="categoria cor2">COLEÇÃO</div>
-
-        <div class="blocos">
-          <div class="bloco">
-            <div class="fotodiv">
-              <img src="./img/foto2.jpg" alt=" " class="fotosclass" />
-            </div>
-            <div class="textodiv">
-              <p class="tituloproduto">Lorem Ipsum</p>
-              <p class="precoproduto">R$300</p>
-            </div>
-          </div>
-          <div class="bloco">
-            <div class="fotodiv">
-              <img src="./img/foto3.jpg" alt=" " class="fotosclass" />
-            </div>
-            <div class="textodiv">
-              <p class="tituloproduto">Lorem Ipsum</p>
-              <p class="precoproduto">R$300</p>
-            </div>
-          </div>
-          <div class="bloco longo">
-            <div class="fotodiv longa">
-              <img src="./img/foto1.jpg" alt=" " class="fotosclass" />
-            </div>
-            <div class="textodiv">
-              <p class="tituloproduto">Lorem Ipsum</p>
-              <p class="precoproduto">R$300</p>
-            </div>
-          </div>
-          <div class="bloco">
-            <div class="fotodiv">
-              <img src="./img/foto4.jpg" alt=" " class="fotosclass" />
-            </div>
-            <div class="textodiv">
-              <p class="tituloproduto">Lorem Ipsum</p>
-              <p class="precoproduto">R$300</p>
-            </div>
-          </div>
-          <div class="bloco">
-            <div class="fotodiv">
-              <img src="./img/foto5.jpg" alt=" " class="fotosclass" />
-            </div>
-            <div class="textodiv">
-              <p class="tituloproduto">Lorem Ipsum</p>
-              <p class="precoproduto">R$300</p>
-            </div>
-          </div>
-        </div>
+        <div class="blocos" id="colecao"></div>
       </div>
     </div>
 
@@ -298,5 +188,6 @@
         </div>
       </div>
     </div>
+    <script src="./js/produtos/index.js"></script>
   </body>
 </html>
