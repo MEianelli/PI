@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAgNlGY5yFlPTuOf9dzQZ2jYDDkLgjWF9g&callback=initMap"
+      defer
+    ></script>
+    <script
       src="https://kit.fontawesome.com/1696b49208.js"
       crossorigin="anonymous"
     ></script>
@@ -63,7 +67,7 @@
           <div class="categoria">Nossas redes sociais</div>
           <div class="logo-texto">
             <i class="fab fa-instagram"></i>
-            <a href="https://www.instagram.com/avoa.h/">AVOA.H</a>
+            <a class="link-customizado" href="https://www.instagram.com/avoa.h/">AVOA.H</a>
           </div>
           <div class="logo-texto">
             <i class="fab fa-whatsapp"></i> (xx)99999-9999
@@ -75,14 +79,16 @@
             <div class="texto-bloco">
               <p>
                 As peças estão disponíveis na
-                <a href="https://www.moinhocolab.com/">CASA MOINHO</a>.
+                <a class="link-customizado" href="https://www.moinhocolab.com/">CASA MOINHO</a>.
               </p>
               <div class="endereco">
                 <p>Rua do Futuro, 177</p>
                 <p>Graças, Recife - PE</p>
               </div>
             </div>
-            <img class="mapa" src="img/exemplo-mapa.png" />
+            <div id="map">
+              
+            </div>
           </div>
         </div>
       </div>
@@ -148,5 +154,6 @@
         </div>
       </div>
     </div>
+    <script src="./js/contatos/index.js"></script>
   </body>
 </html>
